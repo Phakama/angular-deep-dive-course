@@ -1,0 +1,20 @@
+<div class="top-menu">
+
+    <img class="logo"
+         src="https://angular-academy.s3.amazonaws.com/main-logo/main-page-logo-small-hat.png">
+
+</div>
+
+<div class="demo">
+  <div>Start Date: {{startDate | date: "MMM/dd/YYYY" }}</div>
+  <div> {{title | titlecase  }}</div>
+  <div> {{ price | currency: 'ZAR' }} </div>
+  <div> {{ rate | percent }} </div>
+</div>
+
+<div class="course" #container>
+  <course-card
+    (courseSelected)="onCourseSelected($event)"
+        [course]="courses[0]">
+  </course-card>
+</div>

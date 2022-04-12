@@ -1,0 +1,9 @@
+
+.courses {
+  max-width: 400px;
+  margin: 50px auto;
+}
+
+.course-card.beginner {
+  background: lightsalmon;
+}
